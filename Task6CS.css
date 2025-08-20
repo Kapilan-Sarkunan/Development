@@ -1,0 +1,41 @@
+.input-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 130px;
+    background-color: #FFFFFF;
+    margin: auto;
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 150px;
+}
+
+body {
+    background-color: #F3E8F9;
+}
+
+a {
+    text-align: center;
+    color: #D3A6E8;
+    padding: 8px;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    border-color: #F3E8F9;
+}
+
+button {
+    padding: 7px;
+    border-radius: 10px;
+    width: 100px;
+    background: linear-gradient(to right, #C850C0, #4158D0);
+}
+
+.Gradient {
+    background: linear-gradient(to right, #6C3483, #A569BD);
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}

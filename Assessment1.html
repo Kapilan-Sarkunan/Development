@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="Assessmentcs1.css">
+    <title>TODO LIST</title>
+</head>
+
+<body>
+
+    <div class="form-popup" id="theme">
+        <button type="button" class="theme-button" onclick="Theme()"><i class="fas fa-moon"></i></button>
+        <button type="button" class="color-button" onclick="Color()"><i class="fas fa-palette"></i></button>
+        <button type="button" style="width: 50px; border-radius: 10px; background-color: #ffffff;" onclick="CloseSetting()">Close</button>
+    </div>
+
+    <div>
+        <button type="button" class="btn-open" onclick="OpenSetting()">
+            <i class="fas fa-cog"></i>
+        </button>
+    </div>
+
+    <div class="form-style" id="form">
+        <h2>TODO LIST</h2>
+        <div id="TaskContainer"></div>
+        <ul id="output"></ul>
+        <button type="button" id="addBtn"
+            style="width: 100px; border-radius: 10px; margin: 10px; background-color: #ffffff;" onclick="AddTask()">Add
+            New Task
+        </button>
+        <label><input type="checkbox" onclick="Check(this)">CheckBox</label>
+        <!-- <label><input type="checkbox" onclick="Showall()">ShowAll</label> -->
+    </div>
+
+    <script src="AssesmentJS1.js"></script>
+</body>
+
+</html>

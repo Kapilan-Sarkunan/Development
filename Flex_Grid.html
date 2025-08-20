@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid</title>
+    <link rel="stylesheet" href="Flex_Grid.css">
+</head>
+
+<body>
+
+    <div class="container" id="productContainer"></div>
+
+    <script>
+        const container = document.getElementById('productContainer');
+        const Pattern = [3, 2, 3, 2];
+        let productid = 1;
+        let productprice = 500;
+        let col = 1;
+        let row = 1;
+
+        Pattern.forEach(viewgrid => 
+        {
+            for (let i = 0; i < viewgrid; i++) 
+            {
+                let div = document.createElement('div');
+                div.innerHTML = `<h3>Product${productid}<h3>
+                                 <p>Product Price ${productprice}</p>
+                                 <button type ="button">Buy Now</button>`
+                div.style.gridColumn = col;
+                div.style.gridRow = row;
+                container.appendChild(div);
+                col++;
+                productid++;
+                productprice = productprice + 500;
+            }
+            row++
+            col = 1
+        });
+    </script>
+</body>
+
+</html>

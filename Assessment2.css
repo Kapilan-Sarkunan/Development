@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(214, 214, 214);
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ProductContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 15px;
+}
+
+
+.Price-term {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.count-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.Add-to-Count {
+    justify-content: center;
+}
+
+.Add-to-Count button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.Add-to-Cart button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-image {
+    background-color: bisque;
+    max-width: 500px;
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.main-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.sub-image {
+    display: flex;
+    width: 500px;
+    height: 70px;
+    gap: 20px;
+}
+
+.sub-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sub-image div {
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px;
+}
+
+.Add-to-Count {
+    display: flex;
+    gap: 5px;
+}
+
+.Offer{
+    border: 0.5px solid black;
+    padding: 10px;
+}
+
+.Offer button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
